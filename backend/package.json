@@ -1,0 +1,24 @@
+{
+  "name": "realtime-team-collaboration-plateform",
+  "version": "1.0.0",
+  "description": "building a real-time team collaboration platform where teams can manage projects, create and assign tasks, and track progress live. The platform will support role-based access control, Kanban boards for task management, and a real-time team chat system. It also includes a built-in assistant for managing tasks in natural language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "sushant singh",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.6.0",
+    "http": "^0.0.1-security",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.3",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.3"
+  }
+}
