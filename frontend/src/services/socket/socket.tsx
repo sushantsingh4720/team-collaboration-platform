@@ -32,11 +32,7 @@ export const useSocket = () => {
     if (!teamId) return;
 
     // Create socket
-    const socket = io(import.meta.env.VITE_API_BASE_URL, {
-      withCredentials: true,
-      transports: ["websocket"],
-      secure: true,
-    });
+    const socket = io(import.meta.env.VITE_API_BASE_URL);
 
     socketRef.current = socket;
 

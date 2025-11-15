@@ -7,9 +7,7 @@ const setupSocketIO = (server) => {
     cors: {
       origin: process.env.CLIENT_URL,
       methods: ["GET", "POST"],
-      credentials: true,
     },
-    transports: ["websocket"],
   });
 
   io.on("connection", (socket) => {
