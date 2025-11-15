@@ -17,7 +17,7 @@ const register = async (req, res, next) => {
     const { name, email } = value;
     const existingUser = await User.findOne({ email: email });
     const team = await Team.findOne();
-    console.log(team);
+
     if (existingUser)
       return res
         .status(200)
@@ -25,7 +25,6 @@ const register = async (req, res, next) => {
     await User.create({ name, email, teamId: team?._id });
     res.status(200).json({ success: true, message: "Register successfully" });
   } catch (error) {
-    console.log(error);
     next(error);
   }
 };

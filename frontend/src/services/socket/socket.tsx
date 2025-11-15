@@ -34,7 +34,8 @@ export const useSocket = () => {
     // Create socket
     const socket = io(import.meta.env.VITE_API_BASE_URL, {
       withCredentials: true,
-      transports: ["polling"], // optional
+      transports: ["websocket"],
+      secure: true,
     });
 
     socketRef.current = socket;

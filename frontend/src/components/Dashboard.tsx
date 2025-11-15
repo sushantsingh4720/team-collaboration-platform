@@ -89,7 +89,6 @@ export const Dashboard: React.FC = () => {
   const [showDeleteTask, setShowDeleteTask] = useState(false);
   const [selectedTask, setSelectedTask] = useState<Task | null>(null);
 
-  console.log(user);
   const [newProject, setNewProject] = useState({
     name: "",
     description: "",
